@@ -266,7 +266,7 @@ macros = r'''
 \DeclareMathOperator*{\meetop}{\scalerel*{\meet}{\textstyle\sum}}
 \DeclareMathOperator*{\joinop}{\scalerel*{\join}{\textstyle\sum}}
 
-\newcommand{\ind}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
+\newcommand{\ind}{\mathrel{\upmodels}}
 '''
 
 latex_elements = {
@@ -281,6 +281,7 @@ latex_elements = {
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{nicefrac}
+\usepackage{MnSymbol}
 ''' + macros,
 }
 
